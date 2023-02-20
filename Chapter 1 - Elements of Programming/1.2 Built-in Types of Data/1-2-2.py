@@ -5,6 +5,8 @@ import math
 import sys
 import stdio
 
-x = float(sys.argv[1])
+x = int(sys.argv[1])
 
 stdio.writeln(math.sin(x)**2 + math.cos(x)**2)
+
+#the values are not always exactly 1.0 because of the rounding error
