@@ -6,3 +6,7 @@ Since there are no solutions available online, I will upload mine here so that f
 
 I am a novice and my code is not perfect but if it just helps one person im happy.
 
+In my solutions i am not always using the stdio library for certain functions. This is mainly because its easier and better to use more common built-in functions.
+
+If there already exists a solution to to exercise on the dedicated booksite https://introcs.cs.princeton.edu/python/home/ i will just paste it in.
+
