@@ -1,4 +1,4 @@
-# solutions-python
+# Introduction to Programming in Python an interdisciplinary approach
 Hello World,
 
 I am currently learning python with the book "Introduction to Programming in Python an interdisciplinary approach".
