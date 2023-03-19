@@ -1,0 +1,30 @@
+import sys
+import stddraw
+import percolation
+import percolationio
+
+#-----------------------------------------------------------------------
+
+# Accept integer n, float p, and integer t as command-line arguments.
+# Generate a n-by-n random system with site vacancy probability p.
+# Compute the directed percolation flow, and draw result to standard
+# draw. Repeat t times.
+
+def main():
+    n = 10
+    m = 10
+    p = 0.7
+    trials = 1
+    for i in range(trials):
+        isOpen = percolationio.random(n,m, p)
+        stddraw.clear()
+        stddraw.setPenColor(stddraw.BLACK)
+        percolationio.draw(isOpen, False)
+        stddraw.setPenColor(stddraw.BLUE)
+        full = percolation.flowFast(isOpen)
+        percolationio.draw(full, True)
+        stddraw.show(1000.0)
+    stddraw.show()
+
+if __name__ == '__main__':
+    main()
